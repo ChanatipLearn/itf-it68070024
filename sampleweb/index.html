@@ -15,13 +15,12 @@
         </nav>
         <div class="container">
             <h2 id="my-title">Welcome to my ITF Website!</h2>
-            <img src="Cool.png" width="96" alt="Cool" />
+            <img src="https://www.clker.com/cliparts/7/d/1/e/13318154281372242463user-hi.png" width="96" alt="user" />
 			<hr>
 			<div>
-				<textarea name="history" id="history">current account balance</textarea>
+				<textarea name="history" id="history" disabled></textarea>
 			</div>
             <div class="detail">
-                <img src="user.png" alt="user" />
                 <h3>Account Overview</h3>
                 <div class="accinfo">
                     <h4>Account Information</h4>
@@ -30,8 +29,7 @@
                         Type: Savings Account
                     </p>
                 </div>
-                <div class="balanceinfo">
-                    <img src="" alt="">
+                <div class="balanceinf">
                     <h4>Balance Information</h4>
                     <label for="currentacc">Current Account balance:</label>
                     <input type="text" id="currentacc">
@@ -40,21 +38,18 @@
                     <button onclick="balanceinfo()">Change</button>
                 </div>
                 <div class="bankop">
-                    <img src="" alt="">
                     <h4>Bank Operation</h4>
                     <select name="dorw" id="dorw">
-                        <option value="">Deposite</option>
-                        <option value="">Withdraw</option>
+                        <option value="depo">Deposite</option>
+                        <option value="with">Withdraw</option>
                     </select>
-                    <input type="text">
-                    <button type="button">Proceed</button>
+                    <input type="text" id="money">
+                    <button type="button" onclick="bankoperation()">Proceed</button>
                 </div>
                 
             </div>
             <div class="financetools">
                 <h3>Financial Tools</h3>
-                <img src="coins.png" alt="coins"/>
-                <div class="tools">
                     <label for="inbalance">input balance</label>
                     <input type="number" id="inbalance">
 
@@ -71,5 +66,4 @@
             </div>
         </div>
     </body>
-	<script src="script.js"></script>
 </html>
